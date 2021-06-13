@@ -1,0 +1,15 @@
+.footer_section{
+    margin-top: 25px;
+	background: #0a183d;
+    color: #bbb;
+    padding: 60px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-links i{
+    font-size: 30px;
+}

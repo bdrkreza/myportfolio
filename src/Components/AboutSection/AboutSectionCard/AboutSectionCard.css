@@ -1,0 +1,42 @@
+
+.about_container{
+	background: #0a183d;
+	margin: 10px;
+	padding: 50px;
+}
+
+.sub-text {
+	padding-right: 15px;
+}
+
+.sub-text h2 {
+	color: #fff;
+	font-size: 60px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.sub-text h3 {
+	color: #fc0254;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+.sub-text p {
+	color: #fff;
+	font-weight: 400;
+	opacity: 0.6;
+	margin-bottom: 40px;
+}
+
+.sub-list {
+	background: #1c294a;
+	padding: 40px 50px 50px 55px;
+	border-radius: 42px;
+
+}
+.sub-list img{
+	height: 300px;
+	width: 100%;
+}
+

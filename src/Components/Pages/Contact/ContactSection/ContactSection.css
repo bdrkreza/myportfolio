@@ -1,0 +1,291 @@
+
+.contact-container{
+    padding: 50px;
+    background-color: #0a183d;
+}
+
+.contact_title{
+    font-size: 50px;
+    padding: 50px;
+}
+/* .contact_section{
+    box-shadow:3px 3px 5px #BABECC,  -5px -5px 10px #FFF;
+    width: 100%;
+    background-color: #161411;
+} */
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  letter-spacing: 6px;
+  color: #fff;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+  background-color: #0a183d;
+}
+
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-top: 35px;
+}
+
+.list-item {
+  line-height: 6;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 24px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 66px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+hr{
+  border-top: 3px solid #bbb;
+}
+
+
+.c-heading h1{
+	font-family: Roboto;
+	color: #e7eef3;
+	font-size: 2.5rem;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+}
+.c-heading p{
+	font-family: Roboto;
+	color:#cecece;
+	font-size: 0.8rem;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.c-inputs{
+	margin: 30px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.c-inputs input{
+	width:450px;
+	height: 45px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(251,251,251,0.1);
+	outline: none;
+	margin: 20px 0px;
+	padding: 10px;
+	box-sizing: border-box;
+	color: #f4f4f4;
+	display: flex;
+	font-size: 1.3rem;
+}
+.c-inputs textarea{
+	width:450px !important;
+	height: 200px !important;
+	outline: none;
+	background-color: transparent;
+	border:1px solid rgba(82,82,82,1);
+	color: #f4f4f4;
+	padding: 10px;
+	font-size: 1.5rem;
+	box-sizing: border-box;
+}
+.c-inputs button{
+	width:200px;
+	height: 40px;
+	background-color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	letter-spacing: 1px;
+}
+.c-inputs input:focus{
+	border-bottom: 1px solid rgba(252,252,252,1.00);
+	transition: all ease 0.5s;
+}
+.c-inputs textarea:focus{
+	border: none;
+	border-bottom: 1px solid rgba(255,255,255,1.00);
+	transition: all ease 0.5s;
+	background-color: rgba(0,0,0,0.1);
+}
+.c-inputs button:active{
+	transform: scale(1.02);
+}
+
+
+
+
+@media(max-width:450px){
+
+	.contact-box{
+		width: 100%;
+		height: 70vh;
+	}
+
+  .c-inputs {
+  width:150px;
+  display: block;
+
+  }
+  .c-inputs input{
+    width: 250px;
+    font-size: medium;
+  }
+
+.c-inputs textarea  {
+	width:250px !important;
+	outline: none;
+	padding: 10px;
+	font-size: medium;
+}
+
+	.contact_heading h1{
+		font-size: 2.2rem;
+		text-align: center;
+    display: block;
+	}
+
+  .form-control, textarea {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+ 
+  
+  .contact-list {
+    list-style-type: none;
+    margin-top: 5px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 200 17px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 20px;
+  }
+  
+  .phone {
+    margin-left: 20px;
+  }
+  
+  .gmail {
+    margin-left: 10px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+	
+}
+

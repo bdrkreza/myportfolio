@@ -1,0 +1,24 @@
+
+.services_section {
+	width: 100%;
+  }
+
+  
+.service_outline {
+	display: flex;
+	box-shadow: 12px 12px 24px 0 rgba(32, 28, 28, 0.2),
+	  -12px -12px 24px 0 rgba(25, 19, 19, 0.5);
+	width: 580px;
+	height: 230px;
+	border-radius: 40px;
+	padding: 40px;
+	align-items: center;
+	overflow: hidden;
+	margin-bottom: 0;
+  }
+  
+  .service_outline_pressed {
+	box-shadow: inset 1px 1px 1px 0 rgba(10, 8, 8, 0.673),
+	  inset -6px -6px 5px 0 rgba(181, 69, 69, 0.673);
+  }
+

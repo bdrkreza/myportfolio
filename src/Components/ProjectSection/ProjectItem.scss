@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+$font: 'Lato', sans-serif;
+
+$purple: #602566;
+$lightpink: #F7E8F2;
+
+*, 
+html {
+  font-family: $font;
+}
+
+body {
+  background: $lightpink;
+}
+
+.project_Img{
+  height: 300px;
+  width: 100%;
+}
+

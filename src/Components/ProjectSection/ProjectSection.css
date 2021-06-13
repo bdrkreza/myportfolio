@@ -1,0 +1,121 @@
+:root {
+  --dark-color: hsl(var(--hue), 100%, 9%);
+  --light-color: hsl(var(--hue), 95%, 98%);
+  --base: hsl(var(--hue), 95%, 50%);
+  --complimentary1: hsl(var(--hue-complimentary1), 95%, 50%);
+  --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
+
+  --font-family: "Poppins", system-ui;
+
+  --bg-gradient: linear-gradient(
+    to bottom,
+    hsl(var(--hue), 95%, 99%),
+    hsl(var(--hue), 95%, 84%)
+  );
+}
+
+.project-section{
+  background-color: #0a183d;
+  padding: 30px;
+}
+.swiper-container {
+  padding-top: 5rem;
+  max-width: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: var(--deep-dark);
+  z-index: 10;
+  right: 60px;
+  left: auto;
+  top: 0;
+  transform: translateY(50%);
+  color: var(--gray-1);
+  border-radius: 8px;
+  color: #cc3c48 !important;
+}
+
+
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 2rem;
+}
+
+.overlay {
+  width: 100%;
+  max-width: 1140px;
+  max-height: 640px;
+  padding: 15rem 1rem;
+  display: flex;
+  align-items: center;
+  background: #0a183d;
+  box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+
+@media (prefers-contrast: high) {
+  .orb-canvas {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .overlay {
+    padding: 8rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  .overlay {
+    padding: 4rem;
+    height: auto;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay {
+    padding: 1.5rem;
+  }
+
+  .overlay__btns {
+    flex-wrap: wrap;
+  }
+
+  .overlay__btn {
+    width: 100%;
+    font-size: 0.75rem;
+    margin-right: 0;
+  }
+
+  .overlay__btn:first-child {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projects__allItems {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    gap: 5rem;
+  
+  }
+  .projectItem__img {
+    width: 100%;
+  }
+}
