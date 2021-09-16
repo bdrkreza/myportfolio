@@ -1,13 +1,12 @@
 import React from 'react';
-import SubmitButton from '../../../ButtonSection/SubmitBotton/SubmitButton';
 import Footer from '../../../Footer/Footer';
-import ContactSection from '../ContactSection/ContactSection';
+import ContactFrom from '../ContactForm/ContactForm';
 import Map from '../Map/Map';
 
 const Contact = () => {
     return (
         <div className='contact_section'>
-            <ContactSection />
+            <ContactFrom />
             <Map />
             <Footer />
         </div>

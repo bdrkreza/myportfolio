@@ -1,13 +1,13 @@
 
 import React from 'react';
+import bootstrapt from '../../../assets/tools/bootstrapt.png';
+import MongoDB from '../../../assets/tools/mongodb.png';
+import node from '../../../assets/tools/node.png';
+import react from '../../../assets/tools/react.png';
+import redux from '../../../assets/tools/redux.png';
+import './TechnoBar.scss';
 
-import bootstrapt from '../../../assets/tools/bootstrapt.png'
-import react from '../../../assets/tools/react.png'
-import node from '../../../assets/tools/node.png'
-import MongoDB from '../../../assets/tools/mongodb.png'
-import redux from '../../../assets/tools/redux.png'
 
-import './TechnoBar.scss'
 const TechnoBar = () => {
     return (
         <>

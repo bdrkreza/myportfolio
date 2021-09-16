@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+  --primaryBg: #0a183d;
+  --secondaryBg: #545466;
+  --textColor: #bbb;
+  --linkColor: #635cce;
+  --grayColor: #8c8c9b;
+}
+.project-top-section {
+  background: var(--primaryBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-banner {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px;
+  background: #0a183d;
+}
+.project_content_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 1px 2px 15px 4px var(--secondaryBg);
+  box-shadow: 1px 2px 15px 4px var(--secondaryBg);
+}
+.project-body-content {
+  display: grid;
+  color: var(--textColor);
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 5px;
+  }
+}
+
+.top_frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 350px;
+  position: relative;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.212),
+    -4px -4px 5px 0px rgba(102, 59, 59, 0.39),
+    7px 7px 20px 0px rgba(209, 163, 163, 0.133),
+    4px 4px 5px 0px rgba(228, 99, 99, 0.067),
+    inset 0px 0px 0px 0px rgba(255, 255, 255, 0.048),
+    inset 0px 0px 0px 0px rgba(204, 59, 59, 0.067),
+    inset 0px 0px 0px 0px rgba(255, 255, 255, 0.103),
+    inset 0px 0px 0px 0px rgba(204, 39, 39, 0.067);
+  transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 10px;
+}
+
+.top_btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: -7px -7px 20px 0px rgba(26, 4, 4, 0.103),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.514), 4px 4px 5px 0px #0001;
+  transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  font-size: 26px;
+  color: #666;
+  text-decoration: none;
+}
+.top_btn:hover {
+  background: radial-gradient(circle, #0ff 0%, #e0e5ec 60%);
+  color: rgba(102, 102, 102, 0.5);
+  animation: colorchange 3s linear infinite;
+}
+.top_btn:focus {
+  background: radial-gradient(circle, #0ff 0%, #e0e5ec 60%);
+  color: rgba(102, 102, 102, 0.5);
+  animation: colorchange 3s linear infinite;
+}
+
+.top_btn:active {
+  border: 2px solid darken(#0a183d, 10%);
+}
+
+@keyframes colorchange {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

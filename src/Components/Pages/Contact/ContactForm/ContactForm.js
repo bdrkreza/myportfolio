@@ -1,48 +1,101 @@
+import { faFacebookSquare, faGithubSquare, faInstagramSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import './ContactForm.css'
-const ContactForm = () => {
-  return (
-    <div>
-      <body>
+import './ContactForm.css';
+const ContactFrom = () => {
+    return (
+        <>
+            <div className='contact-container'>
+                <div className="mt-5">
+                    <div className="contact_heading">
+                        <h1 className="text-dark text-center">get in touch</h1>
+                        <h1 class="section-header">CONTACT</h1>
+                    </div>
+                    <section id="contact">
+                        <div class=" row">
+                            <div className=" col-lg-6 col-md-12 col-sm-12">
+                                <form class="contact-form" role="form">
+                                    <div class="contact-box">
+                                        <div class="c-inputs">
+                                            <form>
+                                                <input type="text" placeholder="Full Name" />
+                                                <input type="email" placeholder="Example@gmail.com" />
+                                                <textarea name="message" placeholder="Write Message"></textarea>
+                                                <br />
+                                                <button>SEND</button>
 
-        <section id="contact">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
 
-          <div class="social">
+                            <div className="col-lg-6 col-md-12 col-sm-12">
 
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
-            <a href="#"><i class="fab fa-behance"></i></a>
+                                <div class="direct-contact-container">
+                                    <div className="row">
+                                        <div>
+                                            <ul class="contact-list">
+                                                <li class="list-item">
+                                                    <FontAwesomeIcon size="2x" icon={faMapMarker} />
+                                                    <span class="contact-text place">Dhaka, Bangladesh</span>
+                                                </li>
 
-          </div>
+                                                <li class="list-item">
+                                                    <FontAwesomeIcon size="lg" icon={faPhone} />
+                                                    <span class="contact-text phone">
+                                                        <a href="tel:1-212-555-5555" title="Give me a call">
+                                                            (+088) 01789380336</a>
+                                                    </span>
+                                                </li>
 
-          <div class="contact-box">
+                                                <li class="list-item">
+                                                    <FontAwesomeIcon size="lg" icon={faEnvelope} />
+                                                    <span class="contact-text gmail">
+                                                        <a href="mailto:#" title="Send me an email">rkreza2020@gmail.com</a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <hr />
+                                        <ul class="social-media-list">
+                                            <a href="https://www.linkedin.com/in/rkreza2020/" target="_blank" class="contact-icon" rel="noreferrer">
+                                                <li>
+                                                    <a href="">
+                                                        <FontAwesomeIcon size="lg" icon={faGithubSquare} />
+                                                    </a>
+                                                </li>
+                                            </a>
 
-            <div class="c-heading">
-              <h1>Get In Touch</h1>
-              <p>Call Or Email Us Regarding Question Or Issues</p>
+                                            <a href="https://github.com/bdrkreza" target="_blank" rel="noopener noreferrer">
+                                                <li>
+                                                    <a href="" target="_blank" class="contact-icon">
+                                                        <FontAwesomeIcon size="lg" icon={faLinkedin} />
+                                                    </a>
+                                                </li>
+                                            </a>
+                                            <a href="https://www.facebook.com/bdrkreza" target="_blank" rel="noopener noreferrer">
+                                                <li>
+                                                    <a href="" target="_blank" class="contact-icon">
+                                                        <FontAwesomeIcon size="lg" icon={faFacebookSquare} />
+                                                    </a>
+                                                </li>
+                                            </a>
+                                            <li><a href="#" target="_blank" class="contact-icon">
+                                                <FontAwesomeIcon size="lg" icon={faInstagramSquare} />
+                                            </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-
-            <div class="c-inputs">
-              <form>
-                <input type="text" placeholder="Full Name" />
-                <input type="email" placeholder="Example@gmail.com" />
-                <textarea name="message" placeholder="Write Message"></textarea>
-
-                <button>SEND</button>
-              </form>
-            </div>
-
-          </div>
-
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1701.5252574812218!2d74.31603229143637!3d31.46779655679461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391906abd2d8f2db%3A0x2d4bd93a1eb25b41!2sArfa%20Technologies!5e0!3m2!1sen!2s!4v1596774150754!5m2!1sen!2s" width="600" height="450" frameborder="0" style={{ border: "0" }} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </section>
-      </body>
-    </div>
-  );
+        </>
+    );
 };
 
-export default ContactForm;
+export default ContactFrom;

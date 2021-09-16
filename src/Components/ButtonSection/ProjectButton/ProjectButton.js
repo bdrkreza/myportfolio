@@ -11,7 +11,7 @@ const ProjectButton = () => {
                         <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
                     </svg>
                     <Link to="/project">
-                        <span className="read_more_btn">Work</span>
+                        <span className="read_more_btn">Project</span>
                     </Link>
                 </button>
             </div>

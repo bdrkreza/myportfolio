@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css'
 import { Link } from 'react-router-dom';
+import { faFacebookSquare, faGithubSquare, faInstagramSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
     return (
@@ -14,10 +16,10 @@ const Footer = () => {
                                     <div class="footer-widget">
                                         <h2>Important Links</h2>
                                         <ul>
-                                            <li><Link href="">Home</Link></li>
-                                            <li><Link href="">About</Link></li>
-                                            <li><Link href="">Projects</Link></li>
-                                            <li><Link href="">Contact</Link></li>
+                                            <li><Link to="/home">Home</Link></li>
+                                            <li><Link to="/about">About</Link></li>
+                                            <li><Link to="/project">Projects</Link></li>
+                                            <li><Link to="/contact">Contact</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -39,21 +41,34 @@ const Footer = () => {
                             <p>A freelance web designer and developer from Chittagong, Bangladesh. I always make websites that have unique designs and also has a good performance rate.</p>
                             <img src="img/logo.png" alt="" />
                             <div class="social-links">
-                                <a href="/">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="/">
-                                    <i class="fa fa-github-square"></i>
-                                </a>
-                                <a href="/">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="/">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <a href="/">
-                                    <i class="fa fa-youtube"></i>
-                                </a>
+                                <ul class="social-media-list">
+                                    <a href="https://www.linkedin.com/in/rkreza2020/" target="_blank" class="contact-icon">
+                                        <li>
+                                            <a href="">
+                                                <FontAwesomeIcon size="lg" icon={faGithubSquare} />
+                                            </a>
+                                        </li>
+                                    </a>
+
+                                    <a href="https://github.com/bdrkreza" target="_blank" rel="noopener noreferrer">
+                                        <li>
+                                            <a href="" target="_blank" class="contact-icon">
+                                                <FontAwesomeIcon size="lg" icon={faLinkedin} />
+                                            </a>
+                                        </li>
+                                    </a>
+                                    <a href="https://www.facebook.com/bdrkreza" target="_blank" rel="noopener noreferrer">
+                                        <li>
+                                            <a href="" target="_blank" class="contact-icon">
+                                                <FontAwesomeIcon size="lg" icon={faFacebookSquare} />
+                                            </a>
+                                        </li>
+                                    </a>
+                                    <li><a href="#" target="_blank" class="contact-icon">
+                                        <FontAwesomeIcon size="lg" icon={faInstagramSquare} />
+                                    </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

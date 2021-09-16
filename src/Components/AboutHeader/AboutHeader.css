@@ -4,17 +4,17 @@
 	padding:80px 0px;
  	background-color: #0a183d;
   	z-index: 1;
-	  min-width: 100%;
+	min-width: 100%;
 }
 
 .about_Header_section .content-column{
 	position:relative;
-	margin-bottom:20px;
+	margin-bottom:0px;
 }
 
 .about_Header_section .content-column .inner-column{
 	position:relative;
-	padding-top:25px;
+	padding-top:20px;
 	padding-right:100px;
 }
 
@@ -35,20 +35,21 @@
 
 .about_Header_section .image-column{
 	position:relative;
-	margin-bottom:50px;
+	margin-bottom:30px;
 }
 
 .about_Header_section .image-column .inner-column{
 	position:relative;
 	padding:40px 40px 0px 0px;
 	margin-left:50px;
+	margin-top: 40px;
 }
 
 .about_Header_section .image-column .inner-column:after{
 	position:absolute;
 	content:'';
 	right:0px;
-	top:0px;
+	top:4px;
 	left:40px;
 	bottom:100px;
 	z-index:-1;
@@ -116,6 +117,7 @@
 }
 .about_Header_section .btn-style-three:hover {
     color: #ffffff;
+	transition: 1s ;
     background: #d7a449;
 }
 .about_Header_section .btn-style-three {

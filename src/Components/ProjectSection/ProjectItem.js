@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import './ProjectItem.scss'
+import './ProjectItem.scss';
 export default function ProjectItem({ data }) {
   const { img, title, desc } = data;
   return (

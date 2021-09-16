@@ -1,11 +1,10 @@
 import { v4 as uuidv4 } from 'uuid';
+import CoinTrackerImg from '../Image/cointracker.jpg';
+import GreenCtgImg from '../Image/greenctg.jpg';
 import ProjectImg from '../Image/projectImg.png';
 import UTrackerImg from '../Image/utracker.jpg';
-import GreenCtgImg from '../Image/greenctg.jpg';
-import CoinTrackerImg from '../Image/cointracker.jpg';
-import CavinImg from '../Image/cavinimg1.jpg';
 
-const projects = [
+const projectData = [
   {
     id: uuidv4(),
     name: 'U Tracker',
@@ -37,4 +36,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default projectData;

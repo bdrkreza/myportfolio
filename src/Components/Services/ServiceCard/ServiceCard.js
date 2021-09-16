@@ -1,12 +1,12 @@
 import React from 'react';
-import './ServiceCard.css'
+import './ServiceCard.css';
 
 const ServiceCard = ({ data }) => {
     const { icon, title, desc } = data;
     return (
-        <div>
-            <div class="services_container">
-                <div class="card">
+        <>
+            <div class="services_container ">
+                <div class="card" >
                     <div class="imgBx">
                         <img src={icon} alt="" />
                     </div>
@@ -16,7 +16,7 @@ const ServiceCard = ({ data }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

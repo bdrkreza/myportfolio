@@ -1,7 +1,7 @@
 
 import React from 'react';
-import './MySkill.scss'
 import { SkillLang, technology, tools } from "../../../assets/Data/icon";
+import './MySkill.scss';
 const MySkill = () => {
     return (
         <>

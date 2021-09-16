@@ -1,20 +1,9 @@
-import { faPager } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { SkillLang, tools } from '../../assets/Data/icon';
-import html from '../../assets/tools/html.png'
-import css from '../../assets/tools/css.png'
-import sass from '../../assets/tools/sass.png'
-import js from '../../assets/tools/js.png'
-import ts from '../../assets/tools/typeScript.png'
-
-
-import GitHub from '../../assets/tools/github1.png'
-import firebase from '../../assets/tools/firebase.png'
-import heroku from '../../assets/tools/heroku.png'
-import vscode from '../../assets/tools/vs-code.png'
-import './SkillSection.scss'
 import TechnoBar from './MySkill/TechnoBar';
+import './SkillSection.scss';
+
+
 const SkillSection = () => {
     return (
         <div className="skill_container">

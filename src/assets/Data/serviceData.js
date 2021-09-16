@@ -1,8 +1,7 @@
 
-import web_dev from '../Icon/web_dev.png'
 import web_app from '../Icon/app_dev.png'
 import web_design from '../Icon/web_design.png'
-import web_word from '../Icon/wordpress.png'
+import web_dev from '../Icon/web_dev.png'
 import web_res from '../Icon/web_res.png'
 const serviceData = [
     {
@@ -32,12 +31,6 @@ const serviceData = [
         title: 'mobile app design',
         desc:
             'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
-    },
-    {
-        id: 3,
-        icon: web_word,
-        title: 'Wordpress theme customization',
-        desc: 'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
     },
 ];
 export default serviceData;
